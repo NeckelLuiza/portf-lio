@@ -10,31 +10,25 @@
 
 <body>
   <div class="conteiner">
-    <!-- Barra de navegação -->
     <div class="barra-navegacao">
-      <!-- Logo + nome -->
       <div class="logo">
         <img src="assets/logo.svg" alt="Logo" />
         <span>Portfólio</span>
       </div>
 
-      <!-- Links (agora com data-aba) -->
       <nav class="menu">
         <a href="#" data-aba="inicio" class="ativo">Início</a>
         <a href="#" data-aba="projetos">Projetos</a>
         <a href="#" data-aba="curriculo">Currículo</a>
       </nav>
 
-      <!-- Caixa de pesquisa -->
       <div class="pesquisa">
         <input type="text" placeholder="Pesquisar..." />
         <button>Buscar</button>
       </div>
     </div>
 
-    <!-- HERÓI (texto à esquerda + foto hex à direita) -->
     <section class="heroi">
-      <!-- Coluna esquerda -->
       <div class="coluna-esquerda">
         <div class="texto-principal">
           <p class="saudacao">Olá, <span class="eu">sou</span></p>
@@ -61,15 +55,13 @@ Meu foco é transformar processos em experiências ágeis e eficientes.
         </div>
       </div>
 
-      <!-- Coluna direita: foto no hexágono -->
       <div class="coluna-direita">
         <div class="foto-hex">
           <img src="assets/profile.png" alt="Foto de perfil" />
         </div>
       </div>
-    </section> <!-- 🔒 fecha .heroi -->
+    </section> 
 
-    <!-- ÁREA DINÂMICA (extensão do mesmo container) -->
     <section class="area-dinamica">
       <div class="cabecalho-area">
         <p class="legenda">Meus <span class="serviços"></span></p>
@@ -78,7 +70,6 @@ Meu foco é transformar processos em experiências ágeis e eficientes.
 
       <div class="abas-conteudo">
 
-        <!-- INÍCIO (apenas cards) -->
         <div class="aba ativo" id="aba-inicio" data-aba="inicio">
           <div class="card">
             <h3>Automações</h3>
@@ -92,7 +83,7 @@ Meu foco é transformar processos em experiências ágeis e eficientes.
             <h3>Design Gráfico</h3>
             <p>Identidades visuais, materiais digitais e peças criativas.</p>
           </div>
-        </div> <!-- 🔒 fecha INÍCIO -->
+        </div> 
 
         <div class="aba" id="aba-projetos" data-aba="projetos" hidden>
 
@@ -128,7 +119,6 @@ Meu foco é transformar processos em experiências ágeis e eficientes.
 
           <div class="projetos-lado-a-lado">
 
-            <!-- Projeto: Programa Apollo -->
             <div class="projeto-destaque">
 
               <div class="projeto-conteudo">
@@ -156,13 +146,11 @@ Meu foco é transformar processos em experiências ágeis e eficientes.
             </div>
           
 
-            <!-- Projeto: Jovem Inovador do Futuro (com selo do título) -->
             <div class="projeto-destaque">
 
               <div class="projeto-conteudo">
                 <header class="projeto-cabecalho">
                   <h3 class="projeto-titulo">Jovem Inovador do Futuro – FEITECH 2024</h3>
-                  <!-- Selo destacado do título ganho -->
                   <strong class="projeto-subtitulo">Certificado de Mérito – Projeto Despertar</strong>
                 </header>
 
@@ -180,9 +168,6 @@ Meu foco é transformar processos em experiências ágeis e eficientes.
             </div>
           </div>
 
-          <!-- Projetos já existentes aqui -->
-
-          <!-- Container Habilidades Técnicas -->
           <div class="habilidades-bloco">
             <h3>Habilidades Técnicas</h3>
             <div class="habilidades-lista">
@@ -206,12 +191,9 @@ Meu foco é transformar processos em experiências ágeis e eficientes.
           </div>
         </div>
 
-
-          <!-- CURRÍCULO -->
           <div class="aba" id="aba-curriculo" data-aba="curriculo" hidden>
             <div class="cv-grid">
 
-              <!-- Dados pessoais -->
               <section class="cv-card cv-span-2">
                 <h3>Dados pessoais</h3>
                 <ul class="cv-lista">
@@ -223,7 +205,6 @@ Meu foco é transformar processos em experiências ágeis e eficientes.
                 </ul>
               </section>
 
-              <!-- Formação (card grande ocupando 2 colunas) -->
               <section class="cv-card cv-span-2">
                 <h3>Formação acadêmica</h3>
                 <ul class="cv-lista-marcada">
@@ -239,7 +220,6 @@ Meu foco é transformar processos em experiências ágeis e eficientes.
                 </ul>
               </section>
 
-              <!-- Atividades complementares -->
               <section class="cv-card cv-span-2">
                 <h3>Perfil & atividades complementares</h3>
                 <ul class="cv-chips">
@@ -253,7 +233,6 @@ Meu foco é transformar processos em experiências ágeis e eficientes.
             </div>
           </div>
 
-          <!-- JS separado -->
           <script src="main.js"></script>
 </body>
 

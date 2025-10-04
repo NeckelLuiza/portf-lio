@@ -1,4 +1,3 @@
-// Seletores principais
 const linksMenu = document.querySelectorAll('.menu a');
 const abas = document.querySelectorAll('.abas-conteudo .aba');
 const legenda = document.querySelector('.cabecalho-area .legenda');
@@ -17,12 +16,12 @@ function mostrarAba(alvo) {
     }
   });
 
-  // pega o container principal
-  const cont = document.querySelector('.conteiner');
-  cont.classList.remove('inicio', 'projetos', 'curriculo'); // limpa classes antigas
-  cont.classList.add(alvo); // aplica a classe com o nome da aba
 
-  // legenda/título
+  const cont = document.querySelector('.conteiner');
+  cont.classList.remove('inicio', 'projetos', 'curriculo'); 
+  cont.classList.add(alvo); 
+
+ 
   if (alvo === 'inicio') {
     legenda.textContent = 'Meus serviços';
     titulo.textContent = 'O que eu faço';
@@ -35,20 +34,20 @@ function mostrarAba(alvo) {
   }
 }
 
-// Liga os cliques do menu às abas (usando data-aba)
+
 linksMenu.forEach((link) => {
   link.addEventListener('click', (e) => {
     const alvo = link.dataset.aba;
-    if (!alvo) return; // se for outro link, ignora
+    if (!alvo) return; 
     e.preventDefault();
 
     mostrarAba(alvo);
 
-    // marca visual do link ativo
+  
     linksMenu.forEach(l => l.classList.remove('ativo'));
     link.classList.add('ativo');
   });
 });
 
-// Estado inicial
+
 mostrarAba('inicio');
