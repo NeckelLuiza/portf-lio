@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio Luiza Neckel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="conteiner">
+    <!-- Barra de navegação -->
+    <div class="barra-navegacao">
+      <!-- Logo + nome -->
+      <div class="logo">
+        <img src="assets/logo.svg" alt="Logo" />
+        <span>Portfólio</span>
+      </div>
+
+      <!-- Links (agora com data-aba) -->
+      <nav class="menu">
+        <a href="#" data-aba="inicio" class="ativo">Início</a>
+        <a href="#" data-aba="projetos">Projetos</a>
+        <a href="#" data-aba="curriculo">Currículo</a>
+      </nav>
+
+      <!-- Caixa de pesquisa -->
+      <div class="pesquisa">
+        <input type="text" placeholder="Pesquisar..." />
+        <button>Buscar</button>
+      </div>
+    </div>
+
+    <!-- HERÓI (texto à esquerda + foto hex à direita) -->
+    <section class="heroi">
+      <!-- Coluna esquerda -->
+      <div class="coluna-esquerda">
+        <div class="texto-principal">
+          <p class="saudacao">Olá, <span class="eu">sou</span></p>
+          <h1 class="nome"><span class="destaque">Luiza Neckel</span></h1>
+          <p class="cargo">Designer UI/UX e Designer Gráfico</p>
+          <p class="descricao">
+            Lorem ipsum é um texto fictício usado em impressos, designs gráficos ou web.
+          </p>
+
+          <div class="acoes">
+            <a href="#contato" class="botao">Entrar em contato</a>
+          </div>
+
+          <div class="redes">
+            <span class="rotulo-redes">Confira minhas redes</span>
+            <a href="https://github.com/NeckelLuiza" class="icone-hex">
+              <img src="assets/github.svg" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/luiza-neckel/" class="icone-hex">
+              <img src="assets/linkedin.svg" alt="LinkedIn">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coluna direita: foto no hexágono -->
+      <div class="coluna-direita">
+        <div class="foto-hex">
+          <img src="assets/profile.png" alt="Foto de perfil" />
+        </div>
+      </div>
+    </section> <!-- 🔒 fecha .heroi -->
+
+    <!-- ÁREA DINÂMICA (extensão do mesmo container) -->
+    <section class="area-dinamica">
+      <div class="cabecalho-area">
+        <p class="legenda">Meus <span class="serviços"></span></p>
+        <h2 class="titulo-area">O que eu faço</h2>
+      </div>
+
+      <div class="abas-conteudo">
+
+        <!-- INÍCIO (apenas cards) -->
+        <div class="aba ativo" id="aba-inicio" data-aba="inicio">
+          <div class="card">
+            <h3>Automações</h3>
+            <p>Fluxos de atendimento, integrações e processos automatizados.</p>
+          </div>
+          <div class="card">
+            <h3>Marketing Digital</h3>
+            <p>Criação de posts e vídeos, gestão de redes sociais e produção de conteúdo.</p>
+          </div>
+          <div class="card">
+            <h3>Design Gráfico</h3>
+            <p>Identidades visuais, materiais digitais e peças criativas.</p>
+          </div>
+        </div> <!-- 🔒 fecha INÍCIO -->
+
+        <div class="aba" id="aba-projetos" data-aba="projetos" hidden>
+
+          <div class="projeto-destaque">
+            <div class="projeto-logo">
+              <img src="assets/potencializa-logo.png" alt="Logo Potencializa">
+            </div>
+
+            <div class="projeto-conteudo">
+              <header class="projeto-cabecalho-pot">
+                <h3 class="projeto-titulo">Potencializa</h3>
+                <span class="projeto-subtitulo-pot">Sócia e Co-fundadora</span>
+              </header>
+
+              <p>
+                A <strong>Potencializa</strong> é uma empresa de automação e funis conversacionais que cria
+                assistentes de IA personalizados para empresas. Foco em eficiência, redução de custos e melhor
+                relacionamento com clientes via fluxos no WhatsApp, Instagram e outras plataformas.
+              </p>
+
+              <ul class="projeto-lista">
+                <li>Criação de agentes conversacionais inteligentes</li>
+                <li>Automação de atendimento e vendas</li>
+                <li>Integração com CRM e sistemas internos</li>
+                <li>Resultados em agendamentos confirmados e aumento de conversão</li>
+              </ul>
+
+              <div class="projeto-acoes">
+                <a href="https://instagram.com/potencializa.ia" target="_blank" class="botao-menor">Ver mais</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="projetos-lado-a-lado">
+
+            <!-- Projeto: Programa Apollo -->
+            <div class="projeto-destaque">
+
+              <div class="projeto-conteudo">
+                <header class="projeto-cabecalho">
+                  <h3 class="projeto-titulo">Programa Apollo – UPF Parque Científico e Tecnológico</h3>
+                  <strong class="projeto-subtitulo">Pré-incubação · Mar/2024 – Out/2024</strong>
+                </header>
+
+                <p>
+                  Experiência prática em <strong>modelagem de negócios</strong> e <strong>validação de ideias</strong>,
+                  com imersão em ecossistema de inovação e empreendedorismo.
+                </p>
+
+                <ul class="projeto-lista">
+                  <li>Validação de hipóteses e ideias de negócio</li>
+                  <li>Mentorias com especialistas em inovação</li>
+                  <li>Participação em workshops e bootcamps</li>
+                </ul>
+
+                <div class="projeto-acoes">
+                  <a href="https://instagram.com/zenith.productivity" target="_blank"
+                    class="link-instagram">@zenith.productivity</a>
+                </div>
+              </div>
+            </div>
+          
+
+            <!-- Projeto: Jovem Inovador do Futuro (com selo do título) -->
+            <div class="projeto-destaque">
+
+              <div class="projeto-conteudo">
+                <header class="projeto-cabecalho">
+                  <h3 class="projeto-titulo">Jovem Inovador do Futuro – FEITECH 2024</h3>
+                  <!-- Selo destacado do título ganho -->
+                  <strong class="projeto-subtitulo">Certificado de Mérito – Projeto Despertar</strong>
+                </header>
+
+                <p>
+                  Reconhecimento pelo protagonismo jovem e potencial de inovação, com apresentação do projeto
+                  para avaliadores e público em feira tecnológica.
+                </p>
+
+                <ul class="projeto-lista">
+                  <li>Destaque em inovação</li>
+                  <li>Apresentação e defesa do projeto</li>
+                  <li>Networking com ecossistema local</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projetos já existentes aqui -->
+
+          <!-- Container Habilidades Técnicas -->
+          <div class="habilidades-bloco">
+            <h3>Habilidades Técnicas</h3>
+            <div class="habilidades-lista">
+              <div class="habilidade">
+                <img src="assets/python.png" alt="Python">
+                <span>Python</span>
+              </div>
+              <div class="habilidade">
+                <img src="assets/html.png" alt="HTML">
+                <span>HTML</span>
+              </div>
+              <div class="habilidade">
+                <img src="assets/css.png" alt="CSS">
+                <span>CSS</span>
+              </div>
+              <div class="habilidade">
+                <img src="assets/javascript.png" alt="JavaScript">
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+          <!-- CURRÍCULO -->
+          <div class="aba" id="aba-curriculo" data-aba="curriculo" hidden>
+            <div class="cv-grid">
+
+              <!-- Dados pessoais -->
+              <section class="cv-card cv-span-2">
+                <h3>Dados pessoais</h3>
+                <ul class="cv-lista">
+                  <li><strong>Nome:</strong> Luiza Neckel</li>
+                  <li><strong>Telefone:</strong> (54) 99606-9110</li>
+                  <li><strong>E-mail:</strong> <a href="mailto:luizaneckel17@gmail.com">luizaneckel17@gmail.com</a></li>
+                  <li><strong>Nascimento:</strong> 17/12/2006</li>
+                  <li><strong>Cidade:</strong> Passo Fundo/RS</li>
+                </ul>
+              </section>
+
+              <!-- Formação (card grande ocupando 2 colunas) -->
+              <section class="cv-card cv-span-2">
+                <h3>Formação acadêmica</h3>
+                <ul class="cv-lista-marcada">
+                  <li>
+                    <strong>Ciência da Computação</strong> — ATITUS Educação (2025/1–2028/2) · Passo Fundo/RS<br>
+                    <em>Nanodegree's: Desenvolvimento de Aplicações Júnior - Data Science<br>
+                      Desenvolvimento de soluções - Full Stack.</em>
+                  </li>
+                  <li>
+                    <strong>Ensino Médio</strong> — Integrado UPF (2022–2024) · Passo Fundo/RS<br>
+                    <em>Itinerários formativos: Exatas e Ciências da Natureza.</em>
+                  </li>
+                </ul>
+              </section>
+
+              <!-- Atividades complementares -->
+              <section class="cv-card cv-span-2">
+                <h3>Perfil & atividades complementares</h3>
+                <ul class="cv-chips">
+                  <li>Aprendizado contínuo</li>
+                  <li>Empreendedorismo & inovação</li>
+                  <li>Trabalho em equipe</li>
+                  <li>Pensamento analítico</li>
+                </ul>
+              </section>
+
+            </div>
+          </div>
+
+          <!-- JS separado -->
+          <script src="main.js"></script>
+</body>
+
+</html>

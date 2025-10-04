@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" 
+     width="128" height="128" fill="none" 
+     stroke="#7b2cbf" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" 
+     aria-labelledby="logoL2" role="img">
+  <title id="logoL2">Logo L com contêiner roxo</title>
+  <rect x="24" y="24" width="208" height="208" rx="28" ry="28"/>
+  <path d="M88 56v120h96"/>
+</svg>
